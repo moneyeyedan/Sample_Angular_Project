@@ -1,0 +1,38 @@
+
+<p style="text-align:center;">{{tokenname}}</p>
+<div class="row" style = "text-align:center;">
+   <div class="col-lg-5 " style="text-align: right;">
+       <div style="padding: 3px">name</div>
+       <div style="padding: 3px">age</div>
+       <div style="padding: 3px">address</div>
+       <div style="padding: 3px">mobileno</div>
+       <div style="padding: 3px">state</div>
+   </div>
+   <div class="col-lg-7" style="text-align:left;">
+    <div style="padding: 1px">
+        <input name="name" [(ngModel)]="name" type="text" value="{{userdetails.name}}" placeholder="enter your name">
+    </div>
+    <div style="padding: 1px">
+        <input name="age" [(ngModel)]="age" type = "text" value="{{userdetails.age}}"> 
+    </div>
+    <div style="padding: 1px">
+         <input name = "address" [(ngModel)] = "address" type = "text" value="{{userdetails.address}}">
+    </div>
+    <div style="padding: 1px">
+            <input name = "mobileno" [(ngModel)] = "mobileno" type = "text" value="{{userdetails.mobileno}}">
+    </div>
+    <div style="padding: 1px">
+            <input name = "state" [(ngModel)] = "state" type = "text" value="{{userdetails.state}}">
+    </div>
+   </div>
+</div>
+<div class="row" >
+    <div class="col-md-6" style="text-align: right;">
+            <input name ="submit" (click)="detailp()" type = "submit" class="btn btn-info">
+            
+    </div>
+    <div class="col-md-6" style="text-align: left;">
+            <button name = "logout" (click)="logout()" class="btn btn-success" >Logout</button>
+    </div>
+</div>
+

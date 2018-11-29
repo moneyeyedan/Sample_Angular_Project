@@ -1,0 +1,29 @@
+<div *ngIf='msg'>
+    <div class="row">  
+        <div class="col-md-5" style = "text-align: right">
+            <div style="padding: 3px">username </div>
+            <div style="padding:3px">password</div>
+        </div>
+        <div class="col-md-7" style = "text-align: left">
+            <div style = "padding: 1px">
+                <input name="fname" [(ngModel)]="fname" type="email">
+            </div>
+            <div style = "padding: 1px">
+                <input name="fpassword" [(ngModel)]="fpassword" type="password">
+            </div>
+        </div> 
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-6" style="text-align: right"> 
+            <input name="submit" type="submit"  value="Login" (click)="getid()" class="btn btn-info">
+        </div>
+            
+    </div>
+</div>
+<div *ngFor='let name of author'>
+    
+        <div >
+            {{ name }}
+        </div>
+</div>
